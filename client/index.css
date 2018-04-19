@@ -1,0 +1,89 @@
+html {
+  background-color: #1f1f1f;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+}
+
+.headers {
+  border: 0px solid red;
+  width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+#title {
+  display: none;
+}
+
+#loginDiv {
+  display: none;
+}
+
+#canvas {
+  border: 0px solid green;
+  width: 800px;
+  height: 630px;
+  margin: auto;
+  display: none;
+}
+
+#canvas input {
+  height: 25px;
+  width: 50px;
+}
+
+#chat {
+  border: 0px solid purple;
+  height: 170px;
+  width: 800px;
+  margin: auto;
+  display: none;
+}
+
+#stage {
+  border: 1px solid black;
+  cursor: url("./assets/images/penCursor.cur"), pointer;
+}
+@-moz-document url-prefix() {
+      #stage {
+        border: 1px solid black;
+        cursor: url("./assets/images/ffPenCursor.cur"), pointer;
+    }
+}
+#stage:hover {}
+
+#chat label {
+  height: 10%;
+}
+
+textarea {
+  border: 1px solid black;
+  height: 70%;
+  width: 78%;
+  resize: none;
+}
+
+#chatForm {
+  border: 0px solid yellow;
+  height: 15%;
+}
+
+#chatForm input {
+  width: 89%;
+}
+
+#chatForm button {
+  width: 10%;
+}
+
+select {
+  width: 20%;
+  height: 70%;
+  /* height: 107px;
+  width: 150px; */
+}
+
+#chatInput {
+  /* width: 80%;
+  min-width: 630px; */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> CoDraw </title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body onload="new Main('http://localhost:8080');">
+	<div class="headers">
+		<h1 id="waitingHeader">Reaching server...</h1>
+		<div id="title">
+			<h1>CoDraw</h1>
+			<h2>Cooperative and persistent drawing</h2>
+		</div>
+		<div id="loginDiv">
+			<form id="nickForm">
+				<input id="nickInput" type="text" required>
+				<button type="submit">Start drawing!</button>
+			</form>
+		</div>
+		<h4 id="greetings"></h4>
+		<h5 id="loadingHeader"></h5>
+	</div>
+	<div id="canvas">
+		<label>Select a drawing color : </label><input type="color" id="colorPicker"><br>
+		<canvas id="stage" width="800" height="600" />
+	</div>
+	<div id="chat">
+		<label>Artists online</label><br>
+		<select size="5" id="artistList">
+	</select>
+		<textarea id="chatArea" readonly></textarea>
+		<form id="chatForm">
+			<input type="text" id="chatInput" required><button id="btChat">Send</button>
+		</form>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./Main.js"></script>
+</body>
+
+</html>
