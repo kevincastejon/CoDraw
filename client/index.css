@@ -22,7 +22,7 @@ html {
 #canvas {
   border: 0px solid green;
   width: 800px;
-  height: 630px;
+  /* height: 630px; */
   margin: auto;
   display: none;
 }
@@ -31,6 +31,22 @@ html {
   height: 25px;
   width: 50px;
 }
+
+#canvas select {
+  margin:0;
+  height: 40px;
+  width: 50px;
+  font-size: 1.5em;
+}
+
+/* #canvas .toolSelector input {
+  height: auto;
+  width: auto;
+  margin-left: 5px;
+}
+#canvas .toolSelector{
+  background-color: #5e7578;
+} */
 
 #chat {
   border: 0px solid purple;
@@ -42,14 +58,14 @@ html {
 
 #stage {
   border: 1px solid black;
-  cursor: url("./assets/images/penCursor.cur"), pointer;
+   cursor: none; 
 }
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
       #stage {
         border: 1px solid black;
         cursor: url("./assets/images/ffPenCursor.cur"), pointer;
     }
-}
+} */
 #stage:hover {}
 
 #chat label {

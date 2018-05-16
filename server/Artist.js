@@ -4,6 +4,9 @@ class Artist{
     this.socket=socket;
     this.nick=nick;
     this.color;
+    this.thickness=2;
+    this.currentTool="pencil";
+    this.alpha=1;
     this.isDrawing=false;
     this.lastX;
     this.lastY;
